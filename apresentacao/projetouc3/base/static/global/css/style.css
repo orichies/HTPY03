@@ -1,0 +1,129 @@
+/* Formatação de todo o corpo da página */
+body {
+    background-color: #000000;  /* cor verde de fundo */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;  /* ajuste aumentado para dar mais espaço ao header fixo */
+}
+
+body, html {
+    background-color: #858585 !important;
+}
+
+.card-img-top {
+    width: 100%; /* A largura das imagens será 100% do seu container */
+    height: 300px; /* Altura fixada para manter as imagens no mesmo tamanho */
+    object-fit: cover; /* Faz a imagem cobrir a área sem distorcer */
+}
+
+
+/* Cabeçalho fixo */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    left: 0;
+}
+
+/* Rodapé */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.comp {
+    width: 100px;
+}
+
+/* Configurando 3 tags (header, nav, a) */
+header nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: rgb(0, 140, 255);
+    text-decoration: underline;
+}
+
+.galeria img {
+    margin: 10px;
+    border: 2px solid #7700ff;
+    width: 200px;
+    height: 200px;
+    /* Sombra suave */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.galeria img:hover {
+    /* Aumenta a imagem em 10% */
+    transform: scale(1.1);
+}
+
+aside {
+    margin: 20px;
+    text-align: center;
+}
+
+#midias, #mapa {
+    margin: 20px;
+    text-align: center;
+}
+
+#midias video, #midias audio  #midias {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Compensar o header fixo ao rolar até as seções */
+section {
+    scroll-margin-top: 120px;
+}
+
+.tabela-preco {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-preco th, .tabela-preco td {
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Espaça o conteúdo do card */
+    padding: 1rem; /* Ajuste o preenchimento conforme necessário */
+    height: 100%;
+}
+
+.card-body h3 {
+    margin-bottom: 10px; /* Espaço abaixo do preço */
+    text-align: center; /* Centraliza o valor */
+}
+
+.card-body .btn {
+    margin-top: auto; /* Faz com que o botão vá para a parte inferior */
+    width: 100%; /* Faz o botão ocupar toda a largura do card */
+    text-align: center; /* Centraliza o texto do botão */
+}
+
+
+/* Centralizar e melhorar o alinhamento do card */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}

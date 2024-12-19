@@ -1,0 +1,18 @@
+{% include 'global/partials/head.html' %}
+<body>
+
+
+    {% include 'global/partials/menu.html' %}
+    <main class="container">
+    
+        {% block texto %}
+        {% endblock texto %}
+     
+    </main>
+    {% include 'global/partials/footer3.html' %}
+    {% comment %} {% include 'global/partials/head.html' %}
+    {% include 'global/partials/menu.html' %}
+    {% comment %} {% include 'global/partials/modal.html' %} 
+    {% include 'global/partials/script.html' %}  {% endcomment %}
+</body>
+</html>
